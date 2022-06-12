@@ -1,5 +1,4 @@
 from mastodon import Mastodon
-# from pprint import pprint
 import time, json, pathlib
 import tool
 class chatbot:
