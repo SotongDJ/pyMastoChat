@@ -1,0 +1,6 @@
+# For virtual environment
+env/
+
+# For bot use
+*.json
+*.txt
