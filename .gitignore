@@ -4,3 +4,4 @@ env/
 # For bot use
 *.json
 *.txt
+userData/
