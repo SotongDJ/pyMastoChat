@@ -35,7 +35,7 @@ pip3 install Mastodon.py
 
     ```JSON
     {
-        "access_token": "API token",
-        "hostname" : "https://insert your mastodon instance"
+        "access_token": "*insert your API token*",
+        "hostname" : "https://*insert your mastodon instance*"
     }
     ```
