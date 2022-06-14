@@ -5,3 +5,8 @@ env/
 *.json
 *.txt
 userData/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
