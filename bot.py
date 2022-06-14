@@ -1,6 +1,6 @@
 from mastodon import Mastodon
 import time, json, pathlib, re
-from pyTimeTag import libCommand
+from pyTimeTag import libTimeTag
 
 def datetime(output_str="yyyymmddhhnn"):
     yyyy,mm,dd,hh,nn,ss,wday,yday,isdst = time.localtime(time.time())
@@ -69,7 +69,7 @@ class chatbot:
             access_token = secret_dict['access_token'],
             api_base_url = secret_dict['hostname']
         )
-        self.log_host = libCommand.tag()
+        self.log_host = libTimeTag.tag()
         self.log_host.log.name = self.log_name + "-log.txt"
         self.log_host.error.name = self.log_name + "-error.txt"
         self.log_host.start()
