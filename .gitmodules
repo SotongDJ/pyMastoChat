@@ -1,0 +1,3 @@
+[submodule "pyTimeTag"]
+	path = pyTimeTag
+	url = https://github.com/SotongDJ/pyTimeTag.git
