@@ -112,7 +112,7 @@ class chatbot:
                 self.log_host.timeStamp("Loaded message: {} from {}".format(diff_int,len(notif)))
             if len(notif_dict) > 0:
                 self.log_host.timeStamp("Total {} message/s need to be process".format(len(notif_dict)))
-            print("Period start:",count_int,end="\r")
+            # print("Period start:",count_int,end="\r")
             for target in sorted([ int(n) for n in notif_dict.keys()]):
                 inbox = notif_dict[str(target)]
                 filtering_dict = self.filtering(inbox)
@@ -188,7 +188,7 @@ class chatbot:
     def countdown(self,timeInt,msg=""):
         i = 1
         while i <= timeInt:
-            print("{} | Now waiting: {}s/{}s".format(msg,i,timeInt),end="\r")
+            # print("{} | Now waiting: {}s/{}s".format(msg,i,timeInt),end="\r")
             time.sleep(1)
             i = i + 1
 
