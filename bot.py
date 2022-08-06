@@ -120,10 +120,10 @@ class chatbot:
                 if filtering_dict == dict():
                     self.log_host.timeStamp("  [Period] {}       ".format(count_int))
                     error_bool,reply_msg = self.action(inbox)
-                    if errorBool:
+                    if error_bool:
                         self.log_host.timeStamp("  Error: Unable handle")
                         original_content = inbox['status']['content']
-                        purified_Content = self.contentPurifier(original_content)
+                        purified_content = self.contentPurifier(original_content)
                         self.log_host.timeStamp("  Message:"+str(purified_content))
                         self.log_host.timeStamp("  Type: "+inbox.type)
                     reply_toot = self.host.status_reply(inbox['status'],reply_msg)
