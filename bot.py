@@ -81,6 +81,14 @@ class chatbot:
         self.convers_host.target_path = "userData/index.json"
         self.convers_host.load()
         self.log_host.timeStamp("Finish: init()")
+    def reinitiation(self):
+        self.log_host.timeStamp("Start: re-init() [target -> log_host")
+        self.log_host.stop()
+        self.log_host = libTimeTag.tag()
+        self.log_host.log.name = self.log_name + "-log.txt"
+        self.log_host.error.name = self.log_name + "-error.txt"
+        self.log_host.start()
+        self.log_host.timeStamp("Finish: re-init()")
     def watching(self):
         self.log_host.timeStamp("Start: watch()")
         count_int = 1
